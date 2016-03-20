@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :tenants
+  resources :rent_payments
+  resources :tenants
+  resources :leases
+  resources :apartments
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
