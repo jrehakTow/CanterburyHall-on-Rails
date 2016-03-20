@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  leaseID: 1
+  paymentAmount: 9.99
+  dateReceived: 2016-03-20
+  name: MyString
+
+two:
+  leaseID: 1
+  paymentAmount: 9.99
+  dateReceived: 2016-03-20
+  name: MyString

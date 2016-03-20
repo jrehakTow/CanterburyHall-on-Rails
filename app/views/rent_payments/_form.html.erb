@@ -1,0 +1,33 @@
+<%= form_for(@rent_payment) do |f| %>
+  <% if @rent_payment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@rent_payment.errors.count, "error") %> prohibited this rent_payment from being saved:</h2>
+
+      <ul>
+      <% @rent_payment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :leaseID %><br>
+    <%= f.number_field :leaseID %>
+  </div>
+  <div class="field">
+    <%= f.label :paymentAmount %><br>
+    <%= f.text_field :paymentAmount %>
+  </div>
+  <div class="field">
+    <%= f.label :dateReceived %><br>
+    <%= f.date_select :dateReceived %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unitNumber: MyString
+  bedroom: 1
+  bathroom: 1
+  sizeSQFT: 9.99
+  notes: MyText
+
+two:
+  unitNumber: MyString
+  bedroom: 1
+  bathroom: 1
+  sizeSQFT: 9.99
+  notes: MyText

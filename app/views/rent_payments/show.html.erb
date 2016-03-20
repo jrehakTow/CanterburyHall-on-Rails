@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Leaseid:</strong>
+  <%= @rent_payment.leaseID %>
+</p>
+
+<p>
+  <strong>Paymentamount:</strong>
+  <%= @rent_payment.paymentAmount %>
+</p>
+
+<p>
+  <strong>Datereceived:</strong>
+  <%= @rent_payment.dateReceived %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @rent_payment.name %>
+</p>
+
+<%= link_to 'Edit', edit_rent_payment_path(@rent_payment) %> |
+<%= link_to 'Back', rent_payments_path %>

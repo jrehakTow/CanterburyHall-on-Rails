@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Rent Payments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Leaseid</th>
+      <th>Paymentamount</th>
+      <th>Datereceived</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rent_payments.each do |rent_payment| %>
+      <tr>
+        <td><%= rent_payment.leaseID %></td>
+        <td><%= rent_payment.paymentAmount %></td>
+        <td><%= rent_payment.dateReceived %></td>
+        <td><%= rent_payment.name %></td>
+        <td><%= link_to 'Show', rent_payment %></td>
+        <td><%= link_to 'Edit', edit_rent_payment_path(rent_payment) %></td>
+        <td><%= link_to 'Destroy', rent_payment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rent payment', new_rent_payment_path %>

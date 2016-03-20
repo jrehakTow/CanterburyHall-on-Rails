@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rent:</strong>
+  <%= @lease.rent %>
+</p>
+
+<p>
+  <strong>Unitno:</strong>
+  <%= @lease.unitNo %>
+</p>
+
+<p>
+  <strong>Securitydeposit:</strong>
+  <%= @lease.securityDeposit %>
+</p>
+
+<p>
+  <strong>Startdate:</strong>
+  <%= @lease.startDate %>
+</p>
+
+<p>
+  <strong>Enddate:</strong>
+  <%= @lease.endDate %>
+</p>
+
+<%= link_to 'Edit', edit_lease_path(@lease) %> |
+<%= link_to 'Back', leases_path %>
